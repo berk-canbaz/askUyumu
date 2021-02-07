@@ -5,10 +5,13 @@ while loop == True:
 
         qstn = "e"
         while qstn == "e":
+
             male = input("Erkek: ")
             female = input("Kadın: ")
             percent = r.randint(1, 100)
-            if male == "berk" and female == "buse":
+            male = male.capitalize()
+            female = female.capitalize()
+            if male == "Berk" and female == "Buse":
                 print("Aşk Uyumunuz: Ölçülemeyecek Kadar Yüksek")
                 qstn = input("Tekrar Denemek İster Misiniz? (e/h): ")
                 if qstn == "h":
@@ -31,3 +34,7 @@ while loop == True:
     except:
         print("Hata Oluştu!")
         loop = True
+
+
+
+    
